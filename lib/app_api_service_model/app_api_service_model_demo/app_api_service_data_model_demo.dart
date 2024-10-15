@@ -24,7 +24,7 @@ class DataModel extends ApiObject<DataModel> {
                 dynamicData['demo2'].map(
                   (x) => fromMap(x),
                 ),
-              ), //instead of List<dynamic> it shoudl be model m=name of which demo2 is  and in line map((x) => fromMap(x) it should be like map((x) => dynamic().fromMap(x) where again dyanmic refers to the model for demo2.
+              ), //instead of List<dynamic> it shouLd be model m=name of which demo2 is  and in line map((x) => fromMap(x) it should be like map((x) => dynamic().fromMap(x) where again dyanmic refers to the model for demo2.
 
         demo3: dynamicData['demo3'] == null
             ? null
@@ -44,13 +44,13 @@ class DataModel extends ApiObject<DataModel> {
       data['demo1'] = object.demo1;
       data['demo2'] = object.demo2 != []
           ? List<dynamic>.from(object.demo2!.map((x) => toMap(x)))
-          : []; //instead of List<dynamic> it shoudl be model m=name of which demo2 is  and in line map((x) => toMap(x) it should be like map((x) => dynamic().toMap(x) where again dyanmic refers to the model for demo2.
+          : []; //instead of List<dynamic> it should be model m=name of which demo2 is  and in line map((x) => toMap(x) it should be like map((x) => dynamic().toMap(x) where again dyanmic refers to the model for demo2.
       data['demo3'] = object.demo3 != null
           ? toMap(
               object.demo3,
             )
           : null;
-      //instead of toMap(object.demo3,) it should be like  dynamic().toMap(object.demo3,) where dyanmic() refers to the model for demo3.
+      //instead of toMap(object.demo3,) it should be like  dynamic().toMap(object.demo3,) where dynamic() refers to the model for demo3.
       return data;
     } else {
       return null;

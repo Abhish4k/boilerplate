@@ -1,4 +1,4 @@
-// It will be the mixin conisting all the functions and variables regarding a particular flow for example this whole mixin will be of auth conssiting all the functions and varaibale required at the time of auth screens including the api to be call.
+// It will be the mixin consisting all the functions and variables regarding a particular flow for example this whole mixin will be of auth conssiting all the functions and varaibale required at the time of auth screens including the api to be call.
 
 mixin AuthMixin {
 /*
